@@ -1,0 +1,28 @@
+{
+  "name": "aall",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AALL — محرّك دراسة ذاتي: يخطّط، يجدول، يتابع، ويكتب التقارير دون تدخل بشري.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/cli.mjs serve",
+    "dev": "node src/cli.mjs serve",
+    "tick": "node src/cli.mjs tick",
+    "plan": "node src/cli.mjs plan",
+    "report": "node src/cli.mjs report",
+    "dispatch": "node src/cli.mjs dispatch",
+    "doctor": "node src/cli.mjs doctor",
+    "seed": "node src/cli.mjs seed",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "keywords": [
+    "study",
+    "spaced-repetition",
+    "automation",
+    "planner"
+  ],
+  "license": "MIT"
+}

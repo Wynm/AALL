@@ -1,0 +1,3 @@
+{"at":"2026-11-19T16:46:34.848Z","type":"tick","fresh":true,"created":["initialized-topic-states","plan","daily-brief"],"skipped":[],"enqueued":4,"dispatched":0}
+{"at":"2026-11-19T16:46:35.611Z","type":"tick","fresh":false,"created":[],"skipped":["plan-exists","brief-already-sent"],"enqueued":0,"dispatched":0}
+{"at":"2026-11-19T16:46:37.925Z","type":"session","topicId":"math-deriv","topicName":"الاشتقاق والتكامل","subjectName":"الرياضيات","quality":4,"minutes":45,"mastery":0.384,"nextDue":"2026-11-20"}

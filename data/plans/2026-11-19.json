@@ -1,0 +1,243 @@
+{
+  "version": 1,
+  "day": "2026-11-19",
+  "weekday": "الخميس",
+  "humanDay": "الخميس 19 نونبر 2026",
+  "generatedAt": "2026-11-19T16:46:34.842Z",
+  "capacityMinutes": 210,
+  "budgetMinutes": 150,
+  "plannedMinutes": 149,
+  "reviewMinutes": 0,
+  "learnMinutes": 149,
+  "blocks": [
+    {
+      "index": 1,
+      "topicId": "prog-flow",
+      "topicName": "الشروط والحلقات في Python",
+      "subjectId": "prog",
+      "subjectName": "البرمجة",
+      "color": "#86efac",
+      "kind": "learn",
+      "day": "2026-11-19",
+      "start": "18:00",
+      "end": "18:38",
+      "minutes": 38,
+      "risk": 0.587,
+      "mastery": 0,
+      "daysToExam": 19,
+      "rationale": "الامتحان بعد 19 يوم · أول تعرّف على الموضوع"
+    },
+    {
+      "index": 2,
+      "topicId": "math-deriv",
+      "topicName": "الاشتقاق والتكامل",
+      "subjectId": "math",
+      "subjectName": "الرياضيات",
+      "color": "#7dd3fc",
+      "kind": "learn",
+      "day": "2026-11-19",
+      "start": "18:48",
+      "end": "19:26",
+      "minutes": 38,
+      "risk": 0.731,
+      "mastery": 0,
+      "daysToExam": 26,
+      "rationale": "الامتحان بعد 26 يوم · أول تعرّف على الموضوع · موضوع ثقيل يحتاج تركيزًا"
+    },
+    {
+      "index": 3,
+      "topicId": "prog-func",
+      "topicName": "الدوال والوحدات",
+      "subjectId": "prog",
+      "subjectName": "البرمجة",
+      "color": "#86efac",
+      "kind": "learn",
+      "day": "2026-11-19",
+      "start": "19:36",
+      "end": "20:14",
+      "minutes": 38,
+      "risk": 0.587,
+      "mastery": 0,
+      "daysToExam": 19,
+      "rationale": "الامتحان بعد 19 يوم · أول تعرّف على الموضوع"
+    },
+    {
+      "index": 4,
+      "topicId": "eng-essay",
+      "topicName": "كتابة مقال منظم",
+      "subjectId": "eng",
+      "subjectName": "اللغة الإنجليزية",
+      "color": "#fca5a5",
+      "kind": "learn",
+      "day": "2026-11-19",
+      "start": "20:24",
+      "end": "20:59",
+      "minutes": 35,
+      "risk": 0.587,
+      "mastery": 0,
+      "daysToExam": 21,
+      "rationale": "الامتحان بعد 21 يوم · أول تعرّف على الموضوع"
+    }
+  ],
+  "skipped": [
+    {
+      "topicId": "phy-newton",
+      "topicName": "ميكانيك نيوتن",
+      "subjectName": "الفيزياء",
+      "risk": 0.731,
+      "due": true,
+      "reason": "لم يتّسع له الوقت المتاح"
+    },
+    {
+      "topicId": "phy-electro",
+      "topicName": "الكهرباء الساكنة",
+      "subjectName": "الفيزياء",
+      "risk": 0.731,
+      "due": true,
+      "reason": "لم يتّسع له الوقت المتاح"
+    },
+    {
+      "topicId": "math-seq",
+      "topicName": "المتتاليات والحدود",
+      "subjectName": "الرياضيات",
+      "risk": 0.659,
+      "due": true,
+      "reason": "لم يتّسع له الوقت المتاح"
+    },
+    {
+      "topicId": "math-geom",
+      "topicName": "الهندسة التحليلية",
+      "subjectName": "الرياضيات",
+      "risk": 0.659,
+      "due": true,
+      "reason": "لم يتّسع له الوقت المتاح"
+    },
+    {
+      "topicId": "eng-vocab",
+      "topicName": "مفردات أكاديمية",
+      "subjectName": "اللغة الإنجليزية",
+      "risk": 0.514,
+      "due": true,
+      "reason": "لم يتّسع له الوقت المتاح"
+    },
+    {
+      "topicId": "prog-data",
+      "topicName": "هياكل المعطيات الأساسية",
+      "subjectName": "البرمجة",
+      "risk": 0.659,
+      "due": true,
+      "reason": "لم يتّسع له الوقت المتاح"
+    }
+  ],
+  "exams": [
+    {
+      "topicId": "prog-flow",
+      "topicName": "الشروط والحلقات في Python",
+      "subjectName": "البرمجة",
+      "examDate": "2026-12-08",
+      "daysLeft": 19
+    },
+    {
+      "topicId": "prog-func",
+      "topicName": "الدوال والوحدات",
+      "subjectName": "البرمجة",
+      "examDate": "2026-12-08",
+      "daysLeft": 19
+    },
+    {
+      "topicId": "eng-vocab",
+      "topicName": "مفردات أكاديمية",
+      "subjectName": "اللغة الإنجليزية",
+      "examDate": "2026-12-10",
+      "daysLeft": 21
+    },
+    {
+      "topicId": "eng-essay",
+      "topicName": "كتابة مقال منظم",
+      "subjectName": "اللغة الإنجليزية",
+      "examDate": "2026-12-10",
+      "daysLeft": 21
+    },
+    {
+      "topicId": "math-deriv",
+      "topicName": "الاشتقاق والتكامل",
+      "subjectName": "الرياضيات",
+      "examDate": "2026-12-15",
+      "daysLeft": 26
+    },
+    {
+      "topicId": "math-seq",
+      "topicName": "المتتاليات والحدود",
+      "subjectName": "الرياضيات",
+      "examDate": "2026-12-15",
+      "daysLeft": 26
+    },
+    {
+      "topicId": "math-geom",
+      "topicName": "الهندسة التحليلية",
+      "subjectName": "الرياضيات",
+      "examDate": "2026-12-15",
+      "daysLeft": 26
+    },
+    {
+      "topicId": "phy-newton",
+      "topicName": "ميكانيك نيوتن",
+      "subjectName": "الفيزياء",
+      "examDate": "2026-12-18",
+      "daysLeft": 29
+    },
+    {
+      "topicId": "phy-electro",
+      "topicName": "الكهرباء الساكنة",
+      "subjectName": "الفيزياء",
+      "examDate": "2026-12-18",
+      "daysLeft": 29
+    },
+    {
+      "topicId": "prog-data",
+      "topicName": "هياكل المعطيات الأساسية",
+      "subjectName": "البرمجة",
+      "examDate": "2026-12-22",
+      "daysLeft": 33
+    }
+  ],
+  "focus": [
+    {
+      "topicId": "math-deriv",
+      "topicName": "الاشتقاق والتكامل",
+      "subjectName": "الرياضيات",
+      "risk": 0.731,
+      "mastery": 0
+    },
+    {
+      "topicId": "phy-newton",
+      "topicName": "ميكانيك نيوتن",
+      "subjectName": "الفيزياء",
+      "risk": 0.731,
+      "mastery": 0
+    },
+    {
+      "topicId": "phy-electro",
+      "topicName": "الكهرباء الساكنة",
+      "subjectName": "الفيزياء",
+      "risk": 0.731,
+      "mastery": 0
+    }
+  ],
+  "busy": [],
+  "windows": [
+    {
+      "start": 1080,
+      "end": 1290
+    }
+  ],
+  "slots": [
+    {
+      "start": 1080,
+      "end": 1290
+    }
+  ],
+  "notes": [
+    "يوجد 10 موضوعًا مستحقًا و4 فقط اتّسع لها الوقت — ستُقدَّم غدًا."
+  ]
+}

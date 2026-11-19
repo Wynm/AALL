@@ -1,0 +1,111 @@
+{
+  "day": "2026-11-19",
+  "generatedAt": "2026-11-19T16:48:17.784Z",
+  "sessions": 1,
+  "minutes": 45,
+  "hours": 0.8,
+  "avgQuality": 4,
+  "activeDays": 1,
+  "perSubject": [
+    {
+      "name": "الرياضيات",
+      "minutes": 45
+    }
+  ],
+  "weakest": [
+    {
+      "topic": "المتتاليات والحدود",
+      "subject": "الرياضيات",
+      "mastery": 0,
+      "dueDate": "2026-11-19"
+    },
+    {
+      "topic": "الهندسة التحليلية",
+      "subject": "الرياضيات",
+      "mastery": 0,
+      "dueDate": "2026-11-19"
+    },
+    {
+      "topic": "ميكانيك نيوتن",
+      "subject": "الفيزياء",
+      "mastery": 0,
+      "dueDate": "2026-11-19"
+    },
+    {
+      "topic": "الكهرباء الساكنة",
+      "subject": "الفيزياء",
+      "mastery": 0,
+      "dueDate": "2026-11-19"
+    },
+    {
+      "topic": "الشروط والحلقات في Python",
+      "subject": "البرمجة",
+      "mastery": 0,
+      "dueDate": "2026-11-19"
+    }
+  ],
+  "coverage": 0.05,
+  "streak": 1,
+  "mastery": [
+    {
+      "topic": "الاشتقاق والتكامل",
+      "subject": "الرياضيات",
+      "mastery": 38.4,
+      "dueDate": "2026-11-20"
+    },
+    {
+      "topic": "المتتاليات والحدود",
+      "subject": "الرياضيات",
+      "mastery": 0,
+      "dueDate": "2026-11-19"
+    },
+    {
+      "topic": "الهندسة التحليلية",
+      "subject": "الرياضيات",
+      "mastery": 0,
+      "dueDate": "2026-11-19"
+    },
+    {
+      "topic": "ميكانيك نيوتن",
+      "subject": "الفيزياء",
+      "mastery": 0,
+      "dueDate": "2026-11-19"
+    },
+    {
+      "topic": "الكهرباء الساكنة",
+      "subject": "الفيزياء",
+      "mastery": 0,
+      "dueDate": "2026-11-19"
+    },
+    {
+      "topic": "الشروط والحلقات في Python",
+      "subject": "البرمجة",
+      "mastery": 0,
+      "dueDate": "2026-11-19"
+    },
+    {
+      "topic": "الدوال والوحدات",
+      "subject": "البرمجة",
+      "mastery": 0,
+      "dueDate": "2026-11-19"
+    },
+    {
+      "topic": "هياكل المعطيات الأساسية",
+      "subject": "البرمجة",
+      "mastery": 0,
+      "dueDate": "2026-11-19"
+    },
+    {
+      "topic": "مفردات أكاديمية",
+      "subject": "اللغة الإنجليزية",
+      "mastery": 0,
+      "dueDate": "2026-11-19"
+    },
+    {
+      "topic": "كتابة مقال منظم",
+      "subject": "اللغة الإنجليزية",
+      "mastery": 0,
+      "dueDate": "2026-11-19"
+    }
+  ]
+}
