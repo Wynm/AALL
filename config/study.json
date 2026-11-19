@@ -1,0 +1,187 @@
+{
+  "student": {
+    "name": "سفيان",
+    "timezone": "Africa/Casablanca",
+    "language": "ar"
+  },
+  "semester": {
+    "start": "2026-09-15",
+    "end": "2027-01-31"
+  },
+  "availability": {
+    "monday": [
+      [
+        "18:00",
+        "21:30"
+      ]
+    ],
+    "tuesday": [
+      [
+        "18:00",
+        "21:30"
+      ]
+    ],
+    "wednesday": [
+      [
+        "18:00",
+        "21:30"
+      ]
+    ],
+    "thursday": [
+      [
+        "18:00",
+        "21:30"
+      ]
+    ],
+    "friday": [
+      [
+        "18:00",
+        "20:30"
+      ]
+    ],
+    "saturday": [
+      [
+        "09:30",
+        "12:30"
+      ],
+      [
+        "15:00",
+        "18:00"
+      ]
+    ],
+    "sunday": [
+      [
+        "10:00",
+        "13:00"
+      ],
+      [
+        "16:00",
+        "19:00"
+      ]
+    ]
+  },
+  "preferences": {
+    "blockMinutes": 45,
+    "breakMinutes": 10,
+    "maxDailyMinutes": 150,
+    "reviewShare": 0.4,
+    "interleave": true,
+    "examHorizonDays": 30,
+    "quietAfter": "22:30"
+  },
+  "automation": {
+    "tickMinutes": 15,
+    "autoDispatch": false,
+    "dailyBriefHour": 7,
+    "weeklyReportDay": "sunday",
+    "providers": {
+      "calendar": "local",
+      "mail": "local",
+      "notes": "local",
+      "tasks": "local"
+    },
+    "email": "s.elghribi@edu.umi.ac.ma",
+    "calendarId": "c_71ddeaa25a591e3b2812e968d97faa000605bf3bf9b538dd3cec17b968828c60@group.calendar.google.com",
+    "calendarName": "AALL · الدراسة"
+  },
+  "subjects": [
+    {
+      "id": "math",
+      "name": "الرياضيات",
+      "color": "#7dd3fc",
+      "topics": [
+        {
+          "id": "math-deriv",
+          "name": "الاشتقاق والتكامل",
+          "difficulty": 4,
+          "minutes": 45,
+          "examDate": "2026-12-15"
+        },
+        {
+          "id": "math-seq",
+          "name": "المتتاليات والحدود",
+          "difficulty": 3,
+          "minutes": 40,
+          "examDate": "2026-12-15"
+        },
+        {
+          "id": "math-geom",
+          "name": "الهندسة التحليلية",
+          "difficulty": 3,
+          "minutes": 35,
+          "examDate": "2026-12-15"
+        }
+      ]
+    },
+    {
+      "id": "physics",
+      "name": "الفيزياء",
+      "color": "#a78bfa",
+      "topics": [
+        {
+          "id": "phy-newton",
+          "name": "ميكانيك نيوتن",
+          "difficulty": 4,
+          "minutes": 50,
+          "examDate": "2026-12-18"
+        },
+        {
+          "id": "phy-electro",
+          "name": "الكهرباء الساكنة",
+          "difficulty": 4,
+          "minutes": 45,
+          "examDate": "2026-12-18"
+        }
+      ]
+    },
+    {
+      "id": "prog",
+      "name": "البرمجة",
+      "color": "#86efac",
+      "topics": [
+        {
+          "id": "prog-flow",
+          "name": "الشروط والحلقات في Python",
+          "difficulty": 2,
+          "minutes": 40,
+          "examDate": "2026-12-08"
+        },
+        {
+          "id": "prog-func",
+          "name": "الدوال والوحدات",
+          "difficulty": 2,
+          "minutes": 45,
+          "examDate": "2026-12-08"
+        },
+        {
+          "id": "prog-data",
+          "name": "هياكل المعطيات الأساسية",
+          "difficulty": 3,
+          "minutes": 50,
+          "examDate": "2026-12-22"
+        }
+      ]
+    },
+    {
+      "id": "eng",
+      "name": "اللغة الإنجليزية",
+      "color": "#fca5a5",
+      "topics": [
+        {
+          "id": "eng-vocab",
+          "name": "مفردات أكاديمية",
+          "difficulty": 1,
+          "minutes": 25,
+          "examDate": "2026-12-10"
+        },
+        {
+          "id": "eng-essay",
+          "name": "كتابة مقال منظم",
+          "difficulty": 2,
+          "minutes": 35,
+          "examDate": "2026-12-10"
+        }
+      ]
+    }
+  ]
+}

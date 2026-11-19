@@ -1,0 +1,35 @@
+name: اختبارات
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Node ${{ matrix.node }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node: [20, 22]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      # لا npm install: المشروع بلا تبعيات، وهذه ميزة مقصودة.
+      - name: فحص الصياغة
+        run: |
+          node --check src/cli.mjs
+          node --check src/server.mjs
+          for f in src/engine/*.mjs src/providers/*.mjs src/public/app.js; do
+            node --check "$f"
+          done
+      - name: الاختبارات
+        run: npm test
+      - name: فحص الحالة (doctor)
+        run: node src/cli.mjs doctor

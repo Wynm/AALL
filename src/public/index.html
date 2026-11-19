@@ -1,0 +1,154 @@
+<!doctype html>
+<html dir="rtl" lang="ar">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#070b14" />
+    <title>AALL · محرّك الدراسة الذاتي</title>
+    <link rel="stylesheet" href="/app.css" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%235eead4'/%3E%3Ctext x='16' y='22' font-size='16' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='%23021018'%3EA%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <div class="glow glow-a"></div>
+    <div class="glow glow-b"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">A</div>
+        <div>
+          <h1>AALL</h1>
+          <p>محرّك الدراسة الذاتي</p>
+        </div>
+      </div>
+      <div class="status" id="status">
+        <span class="dot"></span>
+        <span id="statusText">جارٍ التشغيل…</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="eyebrow" id="todayLabel">—</p>
+          <h2 id="heroTitle">خطة اليوم</h2>
+          <p class="muted" id="heroSub">—</p>
+          <div class="hero-actions">
+            <button class="btn primary" id="tickBtn">نبضة الآن</button>
+            <button class="btn ghost" id="dispatchBtn">تسليم المعلّق</button>
+            <button class="btn ghost" id="reportBtn">تقرير الأسبوع</button>
+          </div>
+        </div>
+        <div class="ring-wrap">
+          <svg viewBox="0 0 120 120" class="ring" aria-hidden="true">
+            <circle cx="60" cy="60" r="52" class="ring-bg"></circle>
+            <circle cx="60" cy="60" r="52" class="ring-fg" id="ringFg"></circle>
+          </svg>
+          <div class="ring-label">
+            <strong id="ringValue">0%</strong>
+            <span id="ringCaption">من خطة اليوم</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats">
+        <article class="stat">
+          <span class="stat-label">دقائق مخطط لها</span>
+          <strong id="statMinutes">—</strong>
+          <small id="statMinutesSub">—</small>
+        </article>
+        <article class="stat">
+          <span class="stat-label">جلسات اليوم</span>
+          <strong id="statBlocks">—</strong>
+          <small id="statBlocksSub">—</small>
+        </article>
+        <article class="stat">
+          <span class="stat-label">سلسلة الاستمرارية</span>
+          <strong id="statStreak">—</strong>
+          <small id="statStreakSub">—</small>
+        </article>
+        <article class="stat">
+          <span class="stat-label">مستحق للمراجعة</span>
+          <strong id="statDue">—</strong>
+          <small id="statDueSub">—</small>
+        </article>
+      </section>
+
+      <div class="grid">
+        <section class="panel timeline-panel">
+          <div class="panel-head">
+            <h3>جدول اليوم</h3>
+            <span class="tag" id="planTag">—</span>
+          </div>
+          <ol class="timeline" id="timeline"></ol>
+          <div class="notes" id="planNotes"></div>
+        </section>
+
+        <aside class="panel side">
+          <div class="panel-head"><h3>نقاط الخطر</h3></div>
+          <ul class="risk-list" id="riskList"></ul>
+          <div class="panel-head"><h3>أقرب امتحانات</h3></div>
+          <ul class="exam-list" id="examList"></ul>
+        </aside>
+      </div>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h3>المواضيع والإتقان</h3>
+          <span class="tag dim">سجّل جلسة لإعادة الجدولة</span>
+        </div>
+        <div id="subjects" class="subjects"></div>
+      </section>
+
+      <div class="grid">
+        <section class="panel">
+          <div class="panel-head"><h3>التشغيل الذاتي</h3></div>
+          <dl class="kv" id="autoKv"></dl>
+        </section>
+        <section class="panel">
+          <div class="panel-head">
+            <h3>إضافة سريعة</h3>
+            <span class="tag dim">اختياري</span>
+          </div>
+          <form id="addTopicForm" class="form">
+            <div class="row">
+              <select id="subjectSelect" required></select>
+              <input id="topicName" placeholder="اسم الموضوع" required />
+            </div>
+            <div class="row">
+              <label class="field">الصعوبة
+                <input id="topicDifficulty" type="number" min="1" max="5" value="3" />
+              </label>
+              <label class="field">الدقائق
+                <input id="topicMinutes" type="number" min="10" max="120" value="40" />
+              </label>
+              <label class="field">تاريخ الامتحان
+                <input id="topicExam" type="date" />
+              </label>
+            </div>
+            <button class="btn primary" type="submit">إضافة موضوع</button>
+          </form>
+          <form id="addSubjectForm" class="form inline">
+            <input id="subjectName" placeholder="مادة جديدة" required />
+            <button class="btn ghost" type="submit">إضافة مادة</button>
+          </form>
+        </section>
+      </div>
+
+      <footer>
+        <p>AALL يعمل بلا تبعيات خارجية · كل قرار مكتوب ومُسجّل · لا حاجة لمراجعة يدوية.</p>
+      </footer>
+    </main>
+
+    <dialog id="reportDialog" class="dialog">
+      <div class="dialog-head">
+        <h3 id="reportTitle">تقرير</h3>
+        <button class="btn ghost" id="reportClose" type="button">إغلاق</button>
+      </div>
+      <pre id="reportBody"></pre>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

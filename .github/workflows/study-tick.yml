@@ -1,0 +1,75 @@
+name: نبضة الدراسة
+
+# المحرّك يعمل حتى وجهازك مغلق: ينفّذ النبضة اليومية ويحفظ ذاكرة النظام في Git.
+on:
+  schedule:
+    # 05:00 UTC = 06:00 في المغرب (UTC+1) — قبل بداية اليوم الدراسي.
+    - cron: '0 5 * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'إعادة بناء خطة اليوم'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: aall-tick
+  cancel-in-progress: false
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: الاختبارات أولًا
+        run: npm test
+
+      - name: نبضة
+        env:
+          AALL_EMAIL: ${{ secrets.AALL_EMAIL }}
+        run: node src/cli.mjs tick ${{ inputs.force && '--force' || '' }}
+
+      - name: تسليم الإجراءات محليًا
+        run: node src/cli.mjs dispatch
+
+      - name: تقرير أسبوعي (الأحد فقط)
+        if: github.event.schedule == '0 5 * * *'
+        run: node src/cli.mjs report || true
+
+      - name: ملخص في صفحة التشغيل
+        run: |
+          {
+            echo "### نبضة AALL"
+            echo ""
+            node src/cli.mjs doctor | sed 's/\x1b\[[0-9;]*m//g' | sed 's/^/    /'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # ذاكرة النظام: صغيرة، نصّية، وقابلة للمراجعة بـ git diff.
+      - name: حفظ الذاكرة
+        run: |
+          git config user.name  "AALL Bot"
+          git config user.email "aall-bot@users.noreply.github.com"
+          git add -A data/state.json data/plans data/log data/reports 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "لا تغييرات في الذاكرة."
+          else
+            git commit -m "chore(aall): نبضة $(date -u +%F)"
+            git push
+          fi
+
+      - name: حفظ ملفات التسليم كأثر
+        uses: actions/upload-artifact@v4
+        with:
+          name: aall-out-${{ github.run_number }}
+          path: data/out/
+          if-no-files-found: ignore
+          retention-days: 14
